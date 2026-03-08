@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gizlilik Politikası — UserLooperGen</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:#0a0a0f;color:#e2d9f3;font-family:'Syne',sans-serif;min-height:100vh;padding-bottom:40px;}
+body::before{content:'';position:fixed;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(ellipse at 30% 20%,rgba(124,58,237,.08) 0%,transparent 50%),radial-gradient(ellipse at 70% 80%,rgba(168,85,247,.06) 0%,transparent 50%);pointer-events:none;z-index:0;}
+.topbar{position:sticky;top:0;display:flex;align-items:center;gap:14px;padding:16px 20px;background:rgba(18,18,26,.95);border-bottom:1px solid #2a2040;backdrop-filter:blur(10px);z-index:10;}
+.back-btn{width:36px;height:36px;border-radius:50%;background:#1a1a28;border:1px solid #2a2040;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:18px;color:#7c6fa0;text-decoration:none;transition:all .2s;flex-shrink:0;}
+.back-btn:hover{background:#2a2040;color:#e2d9f3;}
+.page-title{font-size:17px;font-weight:800;background:linear-gradient(135deg,#a855f7,#c084fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.content{max-width:640px;margin:0 auto;padding:32px 24px;position:relative;z-index:1;}
+.hero{text-align:center;margin-bottom:40px;}
+.hero-icon{font-size:48px;margin-bottom:16px;}
+.hero-title{font-size:28px;font-weight:800;background:linear-gradient(135deg,#fff,#c084fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:8px;}
+.hero-sub{font-size:13px;color:#7c6fa0;font-family:'Space Mono',monospace;}
+.card{background:#12121a;border:1px solid #2a2040;border-radius:20px;padding:24px;margin-bottom:16px;}
+.card-num{font-size:10px;font-family:'Space Mono',monospace;color:#7c3aed;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;}
+.card h2{font-size:17px;font-weight:800;color:#e2d9f3;margin-bottom:12px;}
+.card p{font-size:14px;color:#7c6fa0;line-height:1.7;}
+.card p strong{color:#c084fc;}
+.badge{display:inline-flex;align-items:center;gap:6px;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.3);color:#22c55e;font-size:12px;font-weight:700;padding:6px 14px;border-radius:20px;font-family:'Space Mono',monospace;margin-bottom:24px;}
+.footer{text-align:center;margin-top:32px;font-size:12px;color:#7c6fa0;font-family:'Space Mono',monospace;line-height:1.8;}
+::-webkit-scrollbar{width:4px;}::-webkit-scrollbar-track{background:transparent;}::-webkit-scrollbar-thumb{background:#2a2040;border-radius:4px;}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <a class="back-btn" href="index.html">←</a>
+  <div class="page-title">🔒 Gizlilik Politikası</div>
+</div>
+<div class="content">
+  <div class="hero">
+    <div class="hero-icon">🔒</div>
+    <div class="hero-title">Gizlilik Politikası</div>
+    <div class="hero-sub">Son güncelleme: Mart 2026</div>
+  </div>
+
+  <div style="text-align:center;margin-bottom:24px;">
+    <span class="badge">✓ Veri toplanmıyor</span>
+  </div>
+
+  <div class="card">
+    <div class="card-num">Madde 01</div>
+    <h2>Genel Bakış</h2>
+    <p>EnderArcane Studio olarak kullanıcı gizliliğine saygı duyuyoruz. Bu politika, UserLooperGen uygulamasının hangi verileri işlediğini açıklamaktadır.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-num">Madde 02</div>
+    <h2>Kişisel Veri Toplanmaz</h2>
+    <p>UserLooperGen <strong>hiçbir kişisel veri toplamaz.</strong> İsim, e-posta adresi, telefon numarası, konum veya kimlik bilgisi talep edilmez ve saklanmaz.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-num">Madde 03</div>
+    <h2>Ses Dosyaları</h2>
+    <p>Yüklediğiniz ses dosyaları <strong>yalnızca cihazınızın geçici belleğinde (RAM) işlenir.</strong> Bu veriler hiçbir sunucuya gönderilmez, kaydedilmez veya üçüncü taraflarla paylaşılmaz. Tarayıcı sekmesi kapatıldığında tüm ses verileri otomatik olarak silinir.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-num">Madde 04</div>
+    <h2>Yerel Depolama</h2>
+    <p>Yalnızca uygulama onay durumunuz cihazınızın yerel depolama alanına (localStorage) kaydedilir. <strong>Bu veri dışarıya iletilmez</strong> ve yalnızca sizin cihazınızda kalır.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-num">Madde 05</div>
+    <h2>Reklam ve Takip Yok</h2>
+    <p>Uygulama hiçbir <strong>reklam ağı, analitik hizmet, üçüncü taraf çerez veya kullanıcı takip aracı</strong> kullanmaz.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-num">Madde 06</div>
+    <h2>.ulbm Proje Dosyaları</h2>
+    <p>Oluşturduğunuz .ulbm proje dosyaları <strong>tamamen size aittir.</strong> Bu dosyalar yalnızca cihazınıza indirilir; içerikleri EnderArcane Studio tarafından görülemez veya işlenemez.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-num">Madde 07</div>
+    <h2>Üçüncü Taraf Hizmetler</h2>
+    <p>Uygulama; JSZip (arşivleme) ve Google Fonts (yazı tipleri) gibi açık kaynak kütüphaneler kullanır. Bu hizmetler yalnızca teknik işlevsellik için kullanılır; kullanıcı verisi iletimi söz konusu değildir.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-num">Madde 08</div>
+    <h2>Veri Silme</h2>
+    <p>Tarayıcı ayarlarından site verilerini temizleyerek yerel olarak saklanan tüm verileri silebilirsiniz.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-num">Madde 09</div>
+    <h2>İletişim</h2>
+    <p>Gizlilikle ilgili sorularınız için Discord sunucumuza katılabilirsiniz.</p>
+  </div>
+
+  <div class="footer">
+    © 2026 EnderArcane Studio · Tüm hakları saklıdır.<br>
+    UserLooperGen v0.1.0
+  </div>
+</div>
+</body>
+</html>
