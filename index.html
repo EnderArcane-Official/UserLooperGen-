@@ -21,7 +21,7 @@ body::before{content:'';position:fixed;top:-50%;left:-50%;width:200%;height:200%
 .consent-checks{width:100%;display:flex;flex-direction:column;gap:10px;text-align:left;}
 .consent-check{display:flex;align-items:flex-start;gap:10px;cursor:pointer;}
 .consent-check input{width:20px;height:20px;accent-color:var(--accent2);cursor:pointer;flex-shrink:0;margin-top:1px;}
-.consent-check span{font-size:13px;color:var(--muted);line-height:1.5;}
+.consent-check label{font-size:13px;color:var(--muted);line-height:1.5;cursor:pointer;}
 .consent-check a{color:var(--accent3);text-decoration:underline;cursor:pointer;}
 .consent-btn{width:100%;padding:14px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:white;border:none;border-radius:14px;font-size:15px;font-weight:800;font-family:'Syne',sans-serif;cursor:pointer;transition:opacity .2s,transform .2s;}
 .consent-btn:disabled{opacity:.3;cursor:not-allowed;}
@@ -199,14 +199,14 @@ body::before{content:'';position:fixed;top:-50%;left:-50%;width:200%;height:200%
     <h2>UserLooperGen'e Hoş Geldin</h2>
     <p>Devam etmek için lütfen politikaları kabul et.</p>
     <div class="consent-checks">
-      <label class="consent-check">
+      <div class="consent-check">
         <input type="checkbox" id="chkTerms" onchange="updateConsent()">
-        <span><a href='terms.html' target='_blank'>Kullanım Şartları</a>'nı okudum, kabul ediyorum.</span>
-      </label>
-      <label class="consent-check">
+        <label for="chkTerms"><a href="terms.html" target="_blank" onclick="event.stopPropagation()">Kullanım Şartları</a>'nı okudum, kabul ediyorum.</label>
+      </div>
+      <div class="consent-check">
         <input type="checkbox" id="chkPrivacy" onchange="updateConsent()">
-        <span><a href='privacy.html' target='_blank'>Gizlilik Politikası</a>'nı okudum, kabul ediyorum.</span>
-      </label>
+        <label for="chkPrivacy"><a href="privacy.html" target="_blank" onclick="event.stopPropagation()">Gizlilik Politikası</a>'nı okudum, kabul ediyorum.</label>
+      </div>
     </div>
     <button class="consent-btn" id="consentBtn" disabled onclick="acceptConsent()">Kabul Et ve Devam Et</button>
     <div class="consent-ver">v0.1.0 • EnderArcane Studio</div>
@@ -225,5 +225,4 @@ body::before{content:'';position:fixed;top:-50%;left:-50%;width:200%;height:200%
     <div class="menu-item" onclick="goTo('profile');closeMenu()"><span class="menu-icon">👤</span>Profil</div>
     <div class="menu-divider"></div>
     <div class="menu-section-label">Yasal</div>
-    <div class="menu-item" onclick="window.open('terms.html','_blank');closeMenu()"><span class="menu-icon">📄</span>Kullanım Şartları</div>
-    <div class="menu-i
+    <div class="menu-item" onclick="window.open('te
